@@ -167,6 +167,6 @@ public class CardTest {
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("button.button").click();
-        $(byText("Я соглашаюсь с условиями обработки и использования моих персональных данных.")).should(appear);
+        $(byText("Я соглашаюсь с условиями обработки и использования моих персональных данных")).should(appear);
     }
 }
