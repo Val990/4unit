@@ -25,8 +25,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Москва");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -39,8 +38,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Москва");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(5).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -53,8 +51,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("moskow");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -66,8 +63,7 @@ public class CardTest {
     void shouldSendFormNoTown() {
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -80,8 +76,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Узловая");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -94,8 +89,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("!8594№@");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -108,8 +102,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Москва");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(1).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -122,8 +115,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Москва");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Sergeev Pavel");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
@@ -136,8 +128,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Москва");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("[data-test-id='agreement']").click();
         $("button.button").click();
@@ -149,8 +140,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Москва");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='agreement']").click();
         $("button.button").click();
@@ -162,8 +152,7 @@ public class CardTest {
         $("[data-test-id='city'] input").setValue("Москва");
         LocalDate date = LocalDate.now();
         String dateTest = date.plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        $("input[placeholder='Дата встречи']").setValue(dateTest);
+        $("[data-test-id='date'] input").doubleClick().sendKeys(dateTest);
         $("[data-test-id='name'] input").setValue("Иванова Мария");
         $("[data-test-id='phone'] input").setValue("+79999990000");
         $("button.button").click();
